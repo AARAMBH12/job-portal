@@ -14,7 +14,7 @@ const useGetAllAdminJobs = () => {
       setLoading(true);
       setError(null);
       try {
-        const res = await axios.get(`${JOB_API_ENDPOINT}/getadminjobs`, {
+        const res = await axios.get(`https://mern-backend1-5xau.onrender.com/api/job/getadminjobs`, {
           withCredentials: true,
         });
         console.log("API Response:", res.data);

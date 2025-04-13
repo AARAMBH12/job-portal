@@ -9,7 +9,7 @@ const useGetAppliedJobs = () => {
   useEffect(() => {
     const fetchAppliedJobs = async () => {
       try {
-        const res = await axios.get(`${APPLICATION_API_ENDPOINT}/get`, {
+        const res = await axios.get(`https://mern-backend1-5xau.onrender.com/api/application/get`, {
           withCredentials: true,
         });
         console.log("API Response:", res.data);

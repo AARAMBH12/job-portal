@@ -25,7 +25,7 @@ const ApplicantsTable = () => {
     try {
       axios.defaults.withCredentials = true;
       const res = await axios.post(
-        `${APPLICATION_API_ENDPOINT}/status/${id}/update`,
+        `https://mern-backend1-5xau.onrender.com/api/application/status/${id}/update`,
         { status }
       );
       console.log(res);

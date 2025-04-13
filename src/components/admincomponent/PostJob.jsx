@@ -52,7 +52,7 @@ const PostJob = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post(`${JOB_API_ENDPOINT}/post`, input, {
+      const res = await axios.post(`https://mern-backend1-5xau.onrender.com/api/job/post`, input, {
         headers: {
           "Content-Type": "application/json",
         },

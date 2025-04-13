@@ -9,7 +9,7 @@ const useGetAllCompanies = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const res = await axios.get(`${COMPANY_API_ENDPOINT}/get`, {
+        const res = await axios.get(`https://mern-backend1-5xau.onrender.com/api/company/get`, {
           withCredentials: true,
         });
         console.log("called");

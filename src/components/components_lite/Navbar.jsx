@@ -16,7 +16,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logoutHandler = async () => {
     try {
-      const res = await axios.post(`${USER_API_ENDPOINT}/logout`, {
+      const res = await axios.post(`https://mern-backend1-5xau.onrender.com/api/user/logout`, {
         withCredentials: true,
       });
       if (res && res.data && res.data.success) {

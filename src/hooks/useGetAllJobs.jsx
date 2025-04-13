@@ -16,7 +16,7 @@ const useGetAllJobs = () => {
       setError(null);
       try {
         const res = await axios.get(
-          `${JOB_API_ENDPOINT}/get?keyword=${searchedQuery}`,
+          `https://mern-backend1-5xau.onrender.com/api/job/get?keyword=${searchedQuery}`,
           {
             withCredentials: true,
           }

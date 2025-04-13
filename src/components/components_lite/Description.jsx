@@ -27,7 +27,7 @@ const Description = () => {
   const applyJobHandler = async () => {
     try {
       const res = await axios.get(
-        `${APPLICATION_API_ENDPOINT}/apply/${jobId}`,
+        `https://mern-backend1-5xau.onrender.com/api/application/apply/${jobId}`,
         { withCredentials: true }
       );
       if (res.data.success) {

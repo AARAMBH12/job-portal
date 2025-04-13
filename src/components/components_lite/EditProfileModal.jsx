@@ -49,7 +49,7 @@ const EditProfileModal = ({ open, setOpen }) => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `${USER_API_ENDPOINT}/profile/update`,
+        `https://mern-backend1-5xau.onrender.com/api/user/profile/update`,
         formData,
         {
           headers: {

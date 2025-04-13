@@ -17,7 +17,7 @@ const CompanyCreate = () => {
   const registerNewCompany = async () => {
     try {
       const res = await axios.post(
-        `${COMPANY_API_ENDPOINT}/register`,
+        `https://mern-backend1-5xau.onrender.com/api/company/register`,
         { companyName },
         {
           headers: {

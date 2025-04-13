@@ -48,7 +48,7 @@ const CompanySetup = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `${COMPANY_API_ENDPOINT}/update/${params.id}`,
+        `https://mern-backend1-5xau.onrender.com/api/company/update/${params.id}`,
         formData,
         {
           headers: {

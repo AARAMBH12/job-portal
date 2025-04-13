@@ -16,7 +16,7 @@ const Applicants = () => {
     const fetchAllApplicants = async () => {
       try {
         const res = await axios.get(
-          `${APPLICATION_API_ENDPOINT}/${params.id}/applicants`,
+          `https://mern-backend1-5xau.onrender.com/api/application/${params.id}/applicants`,
           { withCredentials: true }
         );
         dispatch(setAllApplicants(res.data.job));

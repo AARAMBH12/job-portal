@@ -11,7 +11,7 @@ const useGetCompanyById = (companyId) => {
     const fetchSingleCompany = async () => {
       try {
         const res = await axios.get(
-          `${COMPANY_API_ENDPOINT}/get/${companyId}`,
+          `https://mern-backend1-5xau.onrender.com/api/company/get/${companyId}`,
           { withCredentials: true }
         );
         dispatch(setSingleCompany(res.data.company));
